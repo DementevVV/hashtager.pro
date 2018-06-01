@@ -1,0 +1,48 @@
+<div layout="col">
+  <div flex="20" hide-sm hide-xs>
+    <md-card>
+      <md-card-content>
+        <center>Реклама</center>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div flex="60" flex-xs="100" flex-sm="100">
+    <div layout="row">
+      <div flex>
+        <md-card hide-lg hide-gt-sm>
+          <md-card-content>
+            <center>Реклама</center>
+          </md-card-content>
+        </md-card>
+        <md-card>
+          <md-card-content>
+            <center><h2>Введите слова, разделяя их запятыми:</h2></center>
+            <md-input-container class="md-block" flex-gt-xs>
+              <label>Введите слова</label>
+              <input ng-model="tags" name="tags">
+            </md-input-container>
+            <center><h2>Ваш результат:</h2></center>
+            <p id="hashtags">#{{ tags.split(' ').join('#') }}</p>
+          </md-card-content>
+          <md-card-actions layout="column" layout-align="start">
+            <md-button class="md-raised md-primary" ngclipboard data-clipboard-target="#hashtags">
+              Копировать
+            </md-button>
+          </md-card-actions>
+        </md-card>
+        <md-card hide-lg hide-gt-sm>
+          <md-card-content>
+            <center>Реклама</center>
+          </md-card-content>
+        </md-card>
+      </div>
+    </div>
+  </div>
+  <div flex="20" hide-sm hide-xs>
+    <md-card>
+      <md-card-content>
+        <center>Реклама</center>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

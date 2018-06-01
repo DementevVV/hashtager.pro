@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="StarterApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <meta name="description" content="description" />
+    <title>#Хэштегер</title>
+    <link rel="stylesheet" href="css/angular-material.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/packs/brands.min.js"></script>
+    <script defer src="js/packs/regular.min.js"></script>
+    <script defer src="js/packs/solid.min.js"></script>
+    <script defer src="js/packs/light.min.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+  </head>
+  <body ng-cloak layout="column" layout-fill>
+
+    <div flex>
+      <header>
+        <md-toolbar class="md-hue-2" ng-controller="MenuCtrl">
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Menu" ng-click="toggleLeft()"
+              ng-hide="isOpenLeft()">
+              <i class="fal fa-bars" style="font-size:24px; color: #fff;"></i>
+            </md-button>
+            <h2 ui-sref="index" md-truncate style="color: #fff; font-size: 24px; cursor: pointer">#Хэштегер
+            </h2>
+            <span style="padding-left: 5px; padding-right: 5px;">
+              <!-- <i class="fal fa-chevron-right" id="chevron-hide" style="color: #fff;"></i> -->
+            </span>
+            <!-- <h2 ng-controller="TitleCtrl" md-truncate style="color: #fff; font-size: 24px;"> -->
+              <!-- {{ Page.title() }} -->
+            <!-- </h2> -->
+            <span flex></span>
+          </div>
+        </md-toolbar>
+
+        <div ng-controller="LeftCtrl">
+          <md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="left" md-swipe-left="close();">
+            <md-toolbar class="md-theme-light" layout="row">
+              <div style="align-self: center;">
+              </div>
+            </md-toolbar>
+            <md-content layout-padding>
+              <div layout="column">
+                <div class="layout-align-start-center layout-row" ui-sref="#" ng-click="close();" style="border-bottom: solid 1px;">
+                  <!-- <i class="fal fa-globe fa-2x"></i> -->
+                  <h3 style="cursor: pointer; padding-left: 1em;">Item1</h3>
+                </div>
+                <div class="layout-align-start-center layout-row" ui-sref="#" ng-click="close();" style="border-bottom: solid 1px;">
+                  <!-- <i class="fal fa-camera-alt fa-2x"></i> -->
+                  <h3 style="cursor: pointer; padding-left: 1em;">Item2</h3>
+                </div>
+              </div>
+            </md-content>
+          </md-sidenav>
+        </div>
+      </header>
+
+      <main class='md-padding' layout="row" flex style="min-height: 100vh;">
+          <md-content flex ui-view ></md-content>
+      </main>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-messages.min.js"></script>
+    <script src="js/angular-material.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script src="js/ngclipboard.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
