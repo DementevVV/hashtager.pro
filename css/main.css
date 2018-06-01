@@ -1,6 +1,6 @@
-main {
-  min-height: 100vh;
-}
 #hashtags {
   word-wrap: break-word;
+}
+md-backdrop, md-sidenav {
+  position: fixed;
 }

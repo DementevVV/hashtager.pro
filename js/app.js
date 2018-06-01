@@ -6,6 +6,10 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/",
       templateUrl: 'flow.html'
   });
+  $stateProvider.state('advertising', {
+      url: "/advertising",
+      templateUrl: 'advertising.html'
+  });
 });
 
 app.controller('MenuCtrl', function ($scope, $mdSidenav, $log) {
