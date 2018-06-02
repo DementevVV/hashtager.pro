@@ -7,7 +7,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: 'flow.html'
   });
   $stateProvider.state('advertising', {
-      url: "/advertising",
+      url: "advertising",
       templateUrl: 'advertising.html'
   });
 });
