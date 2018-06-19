@@ -14,12 +14,12 @@
         </md-card> -->
         <md-card>
           <md-card-content>
-            <center><h2>Введите слова через пробелы:</h2></center>
+            <center><h2 class="gradient-text">Введите слова через пробелы:</h2></center>
             <md-input-container class="md-block" flex-gt-xs>
               <label style="color: #9857F2;">Введите слова</label>
               <input ng-model="tags" name="tags" style="color: #9857F2; border-color: #9857F2;">
             </md-input-container>
-            <center><h2>Ваш результат:</h2></center>
+            <center><h2 class="gradient-text">Ваш результат:</h2></center>
             <p id="hashtags" style="color: #9857F2;">#{{ tags.split(' ').join('#') }}</p>
           </md-card-content>
           <md-card-actions layout="column" layout-align="start">
@@ -27,6 +27,19 @@
               Копировать
             </md-button>
           </md-card-actions>
+        </md-card>
+        <md-card style="margin-top: 20px;">
+          <md-card-content>
+            <center><h2 class="gradient-text">Telegram bot <i class="fab fa-telegram-plane"></i></h2></center>
+            <p>Данный функционал доступен в чат-боте</p>
+          </md-card-content>
+          <a href="https://t.me/hashtager_bot">
+            <md-card-actions layout="column" layout-align="start">
+              <md-button class="md-raised md-primary">
+                Попробовать
+              </md-button>
+            </md-card-actions>
+          </a>
         </md-card>
         <!-- <md-card hide-lg hide-gt-sm>
           <md-card-content>

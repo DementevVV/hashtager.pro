@@ -6,32 +6,41 @@ md-backdrop, md-sidenav {
 }
 body {
   font-family: Gotham Pro;
+}
+main {
   min-height: 100vh;
-  height: 100vh;
   background: #fc00ff;
   background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
   background: -o-linear-gradient(left, #00dbde, #fc00ff);
   background: linear-gradient(to right, #00dbde, #fc00ff);
 }
 md-toolbar.md-default-theme.md-hue-2:not(.md-menu-toolbar), md-toolbar.md-hue-2:not(.md-menu-toolbar) {
+  background: #fc00ff;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  background: -o-linear-gradient(left, #00dbde, #fc00ff);
+  background: linear-gradient(to right, #00dbde, #fc00ff);
   background-color: rgba(40, 53, 147, 0);
   color: rgba(255,255,255,0.87);
 }
 md-content.md-default-theme, md-content {
   background-color: rgba(250, 250, 250, 0);
 }
-md-card.md-default-theme, md-card h2 {
+a {
+  text-decoration: none;
+}
+h2 {
   color: #1e1e1e;
   font-family: 'Gotham Pro';
-  font-weight: 300;
+  font-weight: 400;
+}
+h3 {
+  color: #1e1e1e;
+  font-family: 'Gotham Pro';
+  font-weight: 400;
 }
 md-card {
-  /* background: #fc00ff; */
   background: #fafafa;
-  /* background: -o-linear-gradient(left, #9857F2, #fc00ff); */
-  /* background: linear-gradient(to right, #9857F2, #fc00ff); */
   border-radius: .5rem;
-  /* color: #fafafa; */
 }
 .md-button.md-default-theme.md-primary.md-raised:not([disabled]), .md-button.md-primary.md-raised:not([disabled]), .md-button.md-default-theme.md-primary.md-fab:not([disabled]), .md-button.md-primary.md-fab:not([disabled]) {
   background: #fc00ff;
@@ -54,4 +63,46 @@ p::selection {
 }
 p::-moz-selection {
   background: rgb(252, 0, 255, 0.3);
+}
+h2::selection {
+  background: rgb(252, 0, 255, 0.3);
+}
+h2::-moz-selection {
+  background: rgb(252, 0, 255, 0.3);
+}
+h3::selection {
+  background: rgb(252, 0, 255, 0.3);
+}
+h3::-moz-selection {
+  background: rgb(252, 0, 255, 0.3);
+}
+.fontawesome-icon-list {
+  text-align: center;
+}
+.icon {
+  border-radius: .5rem;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: all .2s;
+  /* color: #00dbde; */
+  color: #9857F2;
+}
+.icon:hover {
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+}
+.gradient-text {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fc00ff;
+  display: table;
+  margin: 20px auto;
 }
